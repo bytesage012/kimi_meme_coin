@@ -1939,33 +1939,101 @@
          UPDATE THIS JSON WHEN CLIENT EVIDENCE IS PROVIDED
          ========================================================= -->
     <script id="kimi-client-data" type="application/json">
-    {
-        "evidence": {
-            "operationsWallet": {
-                "label": "Operations Wallet",
-                "description": "Public KIMI treasury (marketing wallet)",
-                "url": "https://solscan.io/account/2sD44Lzdx5Ad9U5feS5LbaszHrTkMFNxgkJfZ2dCQSrK"
-            },
-            "burnTransaction": {
-                "label": "Burn Transaction",
-                "description": "59M KIMI burned (total of two transactions)",
-                "url": "https://solscan.io/tx/3C3KTeKEhav8y9GC1VLMSnaWHXu6NjwdJJWkRsRE7eQS5xs9gQ2b4Db5ECrHUASQAzjAQopqM1GXxZDp5t7F2nPj"
-            },
-            "miningWallet": {
-                "label": "Mining Wallet",
-                "description": "ORE mining wallet",
-                "url": "https://solscan.io/account/BMrLydGMuetku9bwNCuiUP8w1L8uVKhqfGK78tgs5192"
-            },
-            "charityRecords": {
-                "label": "Creator Reward / Charity Records",
-                "description": "Dev wallet (receives creator rewards)",
-                "url": "https://solscan.io/account/GwBpEYyX3vnsextYGA5eCe6pRtQ7F1NdQHjw2V2U2WjL"
-            }
-        },
-        "caseSightings": [],
-        "swornStatements": []
+{
+  "evidence": {
+    "operationsWallet": {
+      "label": "Operations Wallet",
+      "description": "Public KIMI treasury (marketing wallet)",
+      "url": ""
+    },
+    "burnTransaction": {
+      "label": "Burn Transaction",
+      "description": "59M KIMI burned (total of two transactions)",
+      "url": ""
+    },
+    "miningWallet": {
+      "label": "Mining Wallet",
+      "description": "ORE mining wallet",
+      "url": ""
+    },
+    "charityRecords": {
+      "label": "Creator Reward / Charity Records",
+      "description": "Dev wallet (receives creator rewards)",
+      "url": ""
     }
-    </script>
+  },
+
+  "caseSightings": [
+    {
+      "id": "sighting-01",
+      "image": "assets/case-sighting/case-sighting-01.png",
+      "tweetUrl": "https://x.com/Kimi_OnSol/status/2091362277068808455?s=20",
+      "handle": "@Kimi_OnSol",
+      "date": "",
+      "alt": "KIMI post on X"
+    },
+    {
+      "id": "sighting-02",
+      "image": "assets/case-sighting/case-sighting-02.png",
+      "tweetUrl": "https://x.com/Kimi_OnSol/status/2091791030521569378?s=20",
+      "handle": "@Kimi_OnSol",
+      "date": "",
+      "alt": "KIMI post on X"
+    },
+    {
+      "id": "sighting-03",
+      "image": "assets/case-sighting/case-sighting-03.png",
+      "tweetUrl": "https://x.com/Kimi_OnSol/status/2091710391063609485?s=20",
+      "handle": "@Kimi_OnSol",
+      "date": "",
+      "alt": "KIMI post on X"
+    },
+    {
+      "id": "sighting-04",
+      "image": "assets/case-sighting/case-sighting-04.png",
+      "tweetUrl": "https://x.com/Kimi_OnSol/status/2091426090380136699?s=20",
+      "handle": "@Kimi_OnSol",
+      "date": "",
+      "alt": "KIMI post on X"
+    },
+    {
+      "id": "sighting-05",
+      "image": "assets/case-sighting/case-sighting-05.png",
+      "tweetUrl": "https://x.com/Kimi_OnSol/status/2091062971988324834?s=20",
+      "handle": "@Kimi_OnSol",
+      "date": "",
+      "alt": "KIMI post on X"
+    }
+  ],
+
+  "swornStatements": [
+    {
+      "id": "statement-01",
+      "image": "assets/sworn-statements/sworn-statement-01.jpg",
+      "sourceUrl": "https://x.com/Crypto_Rexa/status/2091259522954272961?s=20",
+      "handle": "@Crypto_Rexa",
+      "date": "",
+      "alt": "Community reply about KIMI on X"
+    },
+    {
+      "id": "statement-02",
+      "image": "assets/sworn-statements/sworn-statement-02.jpg",
+      "sourceUrl": "https://x.com/Indasary468850/status/2091108375421669816?s=20",
+      "handle": "@Indasary468850",
+      "date": "",
+      "alt": "Community reply about KIMI on X"
+    },
+    {
+      "id": "statement-03",
+      "image": "assets/sworn-statements/sworn-statement-03.png",
+      "sourceUrl": "https://x.com/Zad_Alchemist/status/2091446050670194789?s=20",
+      "handle": "@Zad_Alchemist",
+      "date": "",
+      "alt": "Community reply about KIMI on X"
+    }
+  ]
+}
+</script>
 
     <!-- ===== SCRIPTS ===== -->
     <script>
@@ -1987,7 +2055,6 @@
                 if (scriptEl && scriptEl.textContent) {
                     const parsed = JSON.parse(scriptEl.textContent);
                     if (parsed) {
-                        // Merge safely
                         if (parsed.evidence) {
                             for (const key in clientData.evidence) {
                                 if (parsed.evidence[key]) {
@@ -2156,7 +2223,6 @@
             }
 
             // ---- PUBLIC WALLET LINK ----
-            // Uses the SAME operationsWallet URL from the JSON data.
             const publicWalletLink = document.getElementById('publicWalletLink');
             const publicWalletLabel = document.getElementById('publicWalletLabel');
             if (publicWalletLink && publicWalletLabel) {
