@@ -27,7 +27,7 @@ export default function Hero({ onCopy }) {
           <div className="tape br"></div>
           <div className="stamp">Case<br />Open</div>
           <div className="pin-photo-frame">
-            <img src="assets/kimi-photo.png" alt="Kimi, a long-haired black and white Chihuahua, staring judgmentally at the camera" />
+            <img src="assets/gallery-1.jpg" alt="Kimi, a long-haired black and white Chihuahua, staring judgmentally at the camera" />
             <div className="pin-photo-cap">Exhibit A — Kimi, unimpressed</div>
           </div>
         </div>

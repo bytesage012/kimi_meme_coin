@@ -9,7 +9,9 @@ export default function CaseFile() {
             <p className="section-sub">Everything on record about the suspect.</p>
           </div>
           <div className="case-body">
-            <p>Kimi was never supposed to become a memecoin. She was just a tiny long-haired Chihuahua with one particular talent: looking at her human like every decision he made was a personal disappointment.</p>
+            <p>Somewhere along the way, people started staying. Then they brought other people. And a dog who
+never asked for any of this somehow ended up with a community and opinions about their financial
+decisions</p>
             <p>Then she discovered crypto. Now she watches Solana — the buys, the sells, the wallet you swear is "just for trading." She knows what you did at 3AM. She has concerns.</p>
             <p>She doesn't promise financial freedom, generational wealth, or a mysterious partnership announcement next Tuesday. She's sarcastic, suspicious, slightly mean, occasionally affectionate, and completely unimpressed by your portfolio.</p>
             <p>Somewhere along the way, degenerates became holders. Holders became a community. And a dog who never asked for any of this became a memecoin with opinions.</p>

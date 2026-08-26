@@ -7,7 +7,8 @@ export default function Mining() {
             <span className="section-num">05 — Operations</span>
             <h2>The Mining Department</h2>
           </div>
-          <p>Kimi put 1 SOL to work mining ORE on Solana, with proceeds returning to the KIMI treasury and community ecosystem. Yes, the dog now has an industrial division.</p>
+          <p>Kimi put 1 SOL to work mining ORE on Solana, with proceeds returning to the KIMI
+treasury. Yes, the dog now has an industrial division.</p>
           <p>Currently a little over 2 ORE is sitting on the official ORE mining site, still unrefined. The wallet is public — the receipts are considerably less exciting than the memes.</p>
         </div>
         <div className="mining-figure">
