@@ -24,6 +24,11 @@ export const clientData = {
       label: "Dev Wallet",
       description: "Receives creator rewards — auto-splits 50% to charity",
       url: "https://solscan.io/account/GwBpEYyX3vnsextYGA5eCe6pRtQ7F1NdQHjw2V2U2WjL"
+    },
+    tokenLock: {
+      label: "Token Lock — 40M KIMI",
+      description: "Locked via Streamflow until Feb 27, 2027, 5:00 UTC",
+      url: "https://app.streamflow.finance/contract/solana/mainnet/74hBFPvfty9qRJYG9ygipaCXPRvhqCMkK9X2Er2xzFcc"
     }
   }
 };
