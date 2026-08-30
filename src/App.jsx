@@ -52,19 +52,22 @@ export default function App() {
   return (
     <>
       <Header />
-      <Hero onCopy={handleCopy} />
-      <Ticker />
-      <CaseFile />
-      <Breaker />
-      <HowToBuy />
-      <Citation />
-      <GuiltMoney />
-      <Mining />
-      <Timeline />
-      <Exhibits />
-      <Stats />
-      <EvidenceLocker />
-      <Faq />
+      {/* Main content – add id for skip link target */}
+      <main id="main-content" className="overflow-x-hidden">
+        <Hero onCopy={handleCopy} />
+        <Ticker />
+        <CaseFile />
+        <Breaker />
+        <HowToBuy />
+        <Citation />
+        <GuiltMoney />
+        <Mining />
+        <Timeline />
+        <Exhibits />
+        <Stats />
+        <EvidenceLocker />
+        <Faq />
+      </main>
       <Footer />
       <Toast show={toast.show} message={toast.msg} />
     </>
